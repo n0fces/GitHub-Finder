@@ -16,13 +16,16 @@
 	padding: 15px 32px;
 	border-radius: 10px;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	@media (min-width: 426px){
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 .info {
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
+	text-align: center;
 
 	&Title{
 		color: var(--gray-200);

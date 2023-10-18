@@ -9,7 +9,6 @@ interface UserCardProps extends LocalGitHubUser {}
 export const UserCard = (props: UserCardProps) => {
 	return (
 		<div className={styles.userCard}>
-			{/* При желании можно было сделать отдельный компонент для аватрки */}
 			<img
 				src={props.avatar}
 				alt={props.login}
@@ -20,7 +19,6 @@ export const UserCard = (props: UserCardProps) => {
 				login={props.login}
 				name={props.name}
 			/>
-			{/* здесь определенно надо будет использовать  */}
 			<p
 				className={
 					props.bio ? styles.bio : styles.bio + ' ' + styles.empty
